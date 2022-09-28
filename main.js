@@ -123,9 +123,11 @@ function agregarPalabra() {
 $agregarPalabraText.addEventListener("change", e => {
     if (!/^[A-ZÑ]*$/.test(e.target.value)) {
         nuevaPalabra = "";
-        e.target.value = ""
+        e.target.value = "";
     } else {
-        nuevaPalabra = e.target.value
+        nuevaPalabra = e.target.value;
+        e.target.value = "";
+        $alert.style.color = "#495057";
     }
 })
 
