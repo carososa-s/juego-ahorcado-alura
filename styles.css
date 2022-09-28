@@ -152,21 +152,58 @@ textarea::placeholder {
     align-items: center;
     justify-content: space-evenly;
     height: 90vh;
+    position:relative;
+}
+.cartel {
+    width: 55%;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    top: 25%;
+    left: 1rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green {
+    color: green;
+
+}
+
+.red {
+    color: red;
+}
+.container-letras {
+    width: 100%;
 }
 
 .container-palabra {
     display: flex;
     justify-content: space-evenly;
     margin-top: 1rem;
+    width: 100%;
+    position: relative;
+    height: 2.125rem;
     
 }
 
-.input-letra {
+.span-letra {
 width: 10%;
 border:none;
 border-bottom: 3px solid var(--dark-blue-400);
 text-align: center;
 font-size: 1.75rem;
+}
+
+.input-letra {
+    position: absolute;
+    width: 100%;
+    border: gray;
+    text-align: center;
+    background-color: transparent;
+    height: 100%;
 }
 
 .input-letra:focus {
@@ -177,11 +214,13 @@ font-size: 1.75rem;
    
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
     margin: 0.5rem 0 1rem 0;
     align-items: center;
     font-size: 1.125rem;
-    color: var(--gray-400)
+    color: var(--gray-400);
+    height: 1.5rem;
+    width: 100%;
 
 }
 .dis-none {
